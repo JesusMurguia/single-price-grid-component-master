@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap');
+body{
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 47%, 52%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    font-family: 'Karla', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background: var(--light-gray);
+}
+/* whole card */
+.container{
+    padding: 4em 3em;
+    max-width: 375px;
+}
+
+.container > .row{
+    box-shadow: 0 .5em 1.2em rgba(0,0,0,.1);
+    border-radius: 1rem;
+}
+
+.container > .row > .col-12{
+    padding: 1.5em;
+}
+
+/* first section */
+
+.first-section{
+    background: white;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.first-section > h1 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: var(--cyan);
+}
+
+.first-section > h2{
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: var(--bright-yellow);
+}
+
+.first-section > p {
+    font-size: .80em;
+    font-weight: 400;
+    line-height: 2;
+    color: var(--grayish-blue);
+}
+
+/* second section */
+
+.second-section{
+    background: var(--cyan);
+}
+
+.second-section > h1{
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.second-section > h2{
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+}
+
+.second-section > h2 > span{
+    font-size: .5em;
+    vertical-align: middle;
+    color: hsla(203, 44%, 93%, 0.534);
+    font-weight: 400;
+}
+
+.second-section > p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+    color: var(--light-gray);
+}
+
+.btn{
+    width: 100%;
+    background: var(--bright-yellow);
+    border-color: var(--bright-yellow);
+    box-shadow: 0 .5em 1.2em rgba(0,0,0,.1);
+    padding: .5em;
+    border-radius: .5rem;
+}
+
+/* third section */
+
+.third-section{
+    background: var(--light-cyan);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.third-section > h1{
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.third-section > p {
+    font-size: .84em;
+    color: hsla(203, 44%, 93%, 0.671);
+    padding-right:30%;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+@media screen and (min-width: 540px){
+    .container{
+        max-height: 100vh;
+        max-width: 775px;
+        padding:0;
+    }
+
+    .container > .row > .col-12{
+        padding: 3em;
+    }
+    
+    .first-section > h1{
+        font-size: 1.75em;
+    }
+
+    .first-section > h2{
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+    }
+
+    .first-section > p{
+        font-size: 1.25em;
+        margin-bottom: 0;
+        line-height: 1.5;
+    }
+
+    .third-section{
+        border-radius: 0 0 .5rem 0;
+    }
+
+    .third-section > p{
+        font-size: 18px; 
+        padding-right: 72px;
+        text-align: left;
+        line-height: 1.5;
+        font-weight: 300;
+        color:var(--light-gray)
+    }
+
+    .second-section{
+        border-radius: 0 0 0 .5rem;
+    }
+
+    .second-section > h1{
+        font-weight: 700;
+        font-size: 1.25em;
+    }
+    
+    .second-section > h2{
+        font-size: 2.5em;
+    }
+
+    .second-section > h2 > span{
+        font-size: .5em;
+        font-weight: 300;
+    }
+
+    .second-section > p{
+        margin-bottom: 2em;
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+
+    .btn{
+        padding: 1.1em;
+    }
+
+    .container{
+        padding-top: 0;
+    }
+}
